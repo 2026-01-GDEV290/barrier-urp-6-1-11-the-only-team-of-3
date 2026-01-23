@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 05a02b338c3016b4290f5e31a1d4f0ab
+timeCreated: 1517812777
+licenseType: Store
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113010
+  packageName: Easy Snap
+  packageVersion: 1.9
+  assetPath: Assets/EasySnap/Materials/shaders/overlayShader.shader
+  uploadId: 461486

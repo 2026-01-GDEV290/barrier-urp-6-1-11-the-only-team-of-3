@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b5fb9f26ec5fc4343a2759c918e29efd
+timeCreated: 1520270810
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113010
+  packageName: Easy Snap
+  packageVersion: 1.9
+  assetPath: Assets/EasySnap/SnapPrefab/snap.prefab
+  uploadId: 461486

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 78e6816ddc0860c41886bf5e34451e00
+timeCreated: 1565795148
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 113010
+  packageName: Easy Snap
+  packageVersion: 1.9
+  assetPath: Assets/EasySnap/Materials/Mat4.mat
+  uploadId: 461486
