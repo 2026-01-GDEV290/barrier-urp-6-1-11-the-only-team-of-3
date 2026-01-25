@@ -5,7 +5,7 @@ public class Break : MonoBehaviour
     public GameObject fractured;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
             BreakTheThing();
     }
 
