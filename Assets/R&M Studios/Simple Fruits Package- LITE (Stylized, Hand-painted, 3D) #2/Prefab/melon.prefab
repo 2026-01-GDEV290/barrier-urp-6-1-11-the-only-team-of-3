@@ -122,3 +122,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fractured: {fileID: 5835362341944159783, guid: d318bcc016dc376448108fd82aecbd57,
     type: 3}
+  destroySound: {fileID: 8300000, guid: 3d2bedd2125e84e4b8747870104ae0c3, type: 3}
+  volume: 1
