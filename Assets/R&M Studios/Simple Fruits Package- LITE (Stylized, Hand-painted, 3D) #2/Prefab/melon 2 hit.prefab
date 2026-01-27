@@ -68,6 +68,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: melon 2 hit
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9f65c7457f9089438b8336c84da55d0,
+        type: 3}
+      propertyPath: m_TagString
+      value: breakable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -102,7 +107,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
