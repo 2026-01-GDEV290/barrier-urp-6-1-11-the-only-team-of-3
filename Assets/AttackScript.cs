@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AttackScript : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class AttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ()
+        {
+
+        }
+        if (attack)
+        {
+        }
     }
 }
