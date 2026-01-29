@@ -1,0 +1,41 @@
+using UnityEngine;
+
+public class ChangeMelons : MonoBehaviour
+{
+
+    public GameObject[] melons;
+
+    [SerializeField] private int hitCount = 0;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            hitCount = hitCount + 1;
+           // Looping Cycle for Array of game Objects
+            //if (hitCount > 3)
+            //{
+            //    hitCount = 0;
+            //}
+            UpdateMelons();
+        }
+    }
+
+    private void UpdateMelons()
+    {
+        for (int i = 0; i < melons.Length; i++)
+        {
+            if (i == hitCount)
+                melons[i].gameObject.SetActive(true);
+            else
+                melons[i].gameObject.SetActive(false); 
+        }
+    }
+}
