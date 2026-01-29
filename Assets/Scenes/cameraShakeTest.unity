@@ -927,8 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc13c6c83257f654bb7748b0d77bc6a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 0
-  duration: 1
+  shakeStart: 0
+  duration: 4
   shakeIntensity: 1
   shakeCurve:
     serializedVersion: 2
@@ -945,11 +945,11 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1.0027771
       value: 0.13174057
-      inSlope: 0.5160917
-      outSlope: 0.5160917
+      inSlope: 0.41314554
+      outSlope: 0.41314554
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.11911298
+      inWeight: 0.075000025
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
