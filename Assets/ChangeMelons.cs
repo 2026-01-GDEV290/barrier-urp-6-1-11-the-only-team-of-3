@@ -7,25 +7,52 @@ public class ChangeMelons : MonoBehaviour
 
     [SerializeField] private int hitCount = 0;
 
+    private bool readinput = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            readinput = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            readinput = false;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    { 
+        if (other.gameObject.CompareTag("Player"))
+        {  
+
+        }
+    }
+   
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if ((readinput) && (Input.GetKeyDown(KeyCode.G)))
         {
             hitCount = hitCount + 1;
-           // Looping Cycle for Array of game Objects
+            // Looping Cycle for Array of game Objects
             //if (hitCount > 3)
             //{
             //    hitCount = 0;
             //}
             UpdateMelons();
+
         }
+
     }
 
     private void UpdateMelons()
@@ -35,7 +62,7 @@ public class ChangeMelons : MonoBehaviour
             if (i == hitCount)
                 melons[i].gameObject.SetActive(true);
             else
-                melons[i].gameObject.SetActive(false); 
+                melons[i].gameObject.SetActive(false);
         }
     }
 }

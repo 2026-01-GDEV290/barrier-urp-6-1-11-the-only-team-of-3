@@ -19,7 +19,7 @@ public class Break : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-          if (Input.GetKeyDown(KeyCode.G))
+          if (Input.GetKeyDown(KeyCode.F))
               BreakTheThing();
         }
     }
