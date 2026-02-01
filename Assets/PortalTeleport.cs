@@ -2,16 +2,12 @@ using UnityEngine;
 
 public class PortalTeleport : MonoBehaviour
 {
-    public Transform player, destination;
-    public GameObject playerObject;
+    public Transform destination;
+    public GameObject player;
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
-        {
-            playerObject.SetActive(false);
-            player.position = destination.position;
-            playerObject.SetActive(true);
-        }
+       player.transform.position = destination.transform.position;
+        //makes one position = another
     }
 }
