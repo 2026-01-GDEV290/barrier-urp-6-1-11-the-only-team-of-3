@@ -13,7 +13,6 @@ public class AmbientSound : MonoBehaviour
         Vector3 closestPoint = Area.ClosestPoint(Player.transform.position);
         //Set position to closest point to player
         transform.position = closestPoint;
-        //GetComponent<AudioSource>().Play();
         
     }
 }
