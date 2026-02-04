@@ -59,6 +59,8 @@ public class CameraShake : MonoBehaviour
         duration = _duration;
         shakeIntensity = _intensity;
         shakeStart=true;
+
+        Debug.Log("run camera shake");
     }
 
     /* setTweenType - Sets the tween type of the camera shake curve
