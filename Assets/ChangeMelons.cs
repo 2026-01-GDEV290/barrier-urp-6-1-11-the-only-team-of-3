@@ -41,7 +41,7 @@ public class ChangeMelons : MonoBehaviour
    
     void Update()
     {
-        if ((readinput) && (Input.GetKeyDown(KeyCode.G)))
+        if ((readinput) && (Input.GetMouseButtonDown(0)))
         {
             hitCount = hitCount + 1;
             // Looping Cycle for Array of game Objects

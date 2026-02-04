@@ -27347,6 +27347,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 772093391340389118, guid: 0673b258e0c9e7040baa98b5da8890ca,
+        type: 3}
+      propertyPath: volume
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388580103660160613, guid: 0673b258e0c9e7040baa98b5da8890ca,
+        type: 3}
+      propertyPath: volume
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1555446397320048321, guid: 0673b258e0c9e7040baa98b5da8890ca,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -27411,6 +27421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -93.164
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415564881799481564, guid: 0673b258e0c9e7040baa98b5da8890ca,
+        type: 3}
+      propertyPath: volume
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7692404843925129930, guid: 0673b258e0c9e7040baa98b5da8890ca,
         type: 3}
@@ -40310,7 +40325,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1400de3fa36b234488d030889e2c9cc3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.384
   m_Pitch: 1
   Loop: 1
   Mute: 0
