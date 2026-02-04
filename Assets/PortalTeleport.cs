@@ -7,7 +7,11 @@ public class PortalTeleport : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-       player.transform.position = destination.transform.position;
-        //makes one position = another
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+            player.transform.position = destination.transform.position;
+            //makes one position = another
+        }
     }
 }
