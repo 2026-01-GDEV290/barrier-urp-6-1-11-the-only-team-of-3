@@ -39370,7 +39370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Area: {fileID: 1914637224}
-  Player: {fileID: 0}
+  Player: {fileID: 1581061725}
 --- !u!4 &1225853459
 Transform:
   m_ObjectHideFlags: 0
@@ -40862,7 +40862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Area: {fileID: 986318697}
-  Player: {fileID: 0}
+  Player: {fileID: 1581061725}
 --- !u!82 &1264964109
 AudioSource:
   m_ObjectHideFlags: 0
