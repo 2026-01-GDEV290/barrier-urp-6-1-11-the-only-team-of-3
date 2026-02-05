@@ -15,12 +15,16 @@ public class AttackForAnimator : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            buttonHoldTime = Time.deltaTime;
             Debug.Log("Player Key G Down");
             animator.SetBool("isPunching", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.G) || buttonHoldTime > 20)
+        if (Input.GetKey(KeyCode.G)){
+            buttonHoldTime += 1;
+            Debug.Log("Button Hold Time: " + buttonHoldTime);
+        }
+
+        if (Input.GetKeyUp(KeyCode.G) || buttonHoldTime > 5)
         {
             buttonHoldTime = 0.0f;
             animator.SetBool("isPunching", false);

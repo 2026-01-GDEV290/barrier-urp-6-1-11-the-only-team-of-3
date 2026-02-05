@@ -3,12 +3,13 @@ using System.Collections;
 
 public class CameraShake : MonoBehaviour
 {
+    public static CameraShake Instance;
     public bool shakeStart = false;
     public float duration = 1f;
     public float shakeIntensity = 1f;
     private float enumElapsedTime = 0f;
 
-    public static CameraShake Instance;
+    
 
     public AnimationCurve shakeCurve;
     
@@ -56,7 +57,7 @@ public class CameraShake : MonoBehaviour
      * @param _duration - Sets the duration of the camera shake
      * @param _intensity - Sets the intensity of the camera shake
      */
-    public void StartCameraShake(int _duration, int _intensity)
+    public void StartCameraShake(float _duration, float _intensity)
     {
         duration = _duration;
         shakeIntensity = _intensity;

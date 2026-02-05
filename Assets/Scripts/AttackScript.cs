@@ -9,6 +9,7 @@ public class AttackScript : MonoBehaviour
     
     Animator animator;
     public Camera mycamera;
+    public CameraShake mycamerashake;
     public Hitstop hitstop;
     public PlayerCollisionStuff collisionStuff;
     
@@ -19,6 +20,7 @@ public class AttackScript : MonoBehaviour
         collisionStuff = GetComponent<PlayerCollisionStuff>();
         hitstop = GetComponent<Hitstop>();
         mycamera = GetComponent<Camera>();
+        mycamerashake = GetComponentInChildren<CameraShake>(true);
         animator = GetComponent<Animator>();
     }
 
@@ -40,7 +42,21 @@ public class AttackScript : MonoBehaviour
                 if (hitCount == 1)
                 {
                     Debug.Log("Hit Count Condition Run");
-                    CameraShake.Instance?.StartCameraShake(5, 5);
+                    mycamerashake.StartCameraShake(0.2f, 0.02f);
+                    //hitstop.SetHitstop(2);
+                } else
+
+                if (hitCount == 2)
+                {
+                    Debug.Log("Hit Count Condition Run");
+                    mycamerashake.StartCameraShake(0.4f, 0.1f);
+                    //hitstop.SetHitstop(2);
+                } else
+
+                if (hitCount == 3)
+                {
+                    Debug.Log("Hit Count Condition Run");
+                    mycamerashake.StartCameraShake(0.45f, 0.55f);
                     //hitstop.SetHitstop(2);
                 }
             }
