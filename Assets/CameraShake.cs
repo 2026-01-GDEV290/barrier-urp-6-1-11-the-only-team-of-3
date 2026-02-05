@@ -8,6 +8,8 @@ public class CameraShake : MonoBehaviour
     public float shakeIntensity = 1f;
     private float enumElapsedTime = 0f;
 
+    public static CameraShake Instance;
+
     public AnimationCurve shakeCurve;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created

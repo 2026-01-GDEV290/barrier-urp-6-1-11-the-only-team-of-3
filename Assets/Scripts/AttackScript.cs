@@ -5,13 +5,12 @@ public class AttackScript : MonoBehaviour
     [SerializeField] private int hitCount = 0;
 
     private bool readinput = false;
-
-    private CameraShake cameraShake;
-    private Hitstop hitstop;
     private float buttonHoldTime;
+    
     Animator animator;
-
-    private PlayerCollisionStuff collisionStuff;
+    public Camera mycamera;
+    public Hitstop hitstop;
+    public PlayerCollisionStuff collisionStuff;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,7 +18,7 @@ public class AttackScript : MonoBehaviour
     {
         collisionStuff = GetComponent<PlayerCollisionStuff>();
         hitstop = GetComponent<Hitstop>();
-        cameraShake = GetComponent<CameraShake>(); 
+        mycamera = GetComponent<Camera>();
         animator = GetComponent<Animator>();
     }
 
@@ -41,8 +40,8 @@ public class AttackScript : MonoBehaviour
                 if (hitCount == 1)
                 {
                     Debug.Log("Hit Count Condition Run");
-                    cameraShake.StartCameraShake(5, 5);
-                    hitstop.SetHitstop(10);
+                    CameraShake.Instance?.StartCameraShake(5, 5);
+                    //hitstop.SetHitstop(2);
                 }
             }
             // Looping Cycle for Array of game Objects
