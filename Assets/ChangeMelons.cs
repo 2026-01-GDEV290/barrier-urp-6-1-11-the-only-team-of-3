@@ -41,7 +41,7 @@ public class ChangeMelons : MonoBehaviour
    
     void Update()
     {
-        if ((readinput) && (Input.GetKeyDown(KeyCode.G)))
+        if ((readinput) && (Input.GetKeyDown(KeyCode.Mouse0)))
         {
             hitCount = hitCount + 1;
 

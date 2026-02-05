@@ -27,10 +27,10 @@ public class AttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             buttonHoldTime = Time.deltaTime;
-            Debug.Log("Player Key G Down");
+            Debug.Log("Player Mouseclick");
             animator.SetBool("isPunching", true);
 
             if (collisionStuff.GetReadInput() == true)
@@ -68,7 +68,7 @@ public class AttackScript : MonoBehaviour
 
         }
 
-        if (Input.GetKeyUp(KeyCode.G) || buttonHoldTime > 20)
+        if (Input.GetKeyUp(KeyCode.Mouse0) || buttonHoldTime > 20)
         {
             buttonHoldTime = 0.0f;
             animator.SetBool("isPunching", false);
